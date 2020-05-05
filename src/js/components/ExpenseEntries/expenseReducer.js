@@ -26,7 +26,7 @@ export default function ExpenseReducer (state = defaultState, action) {
             const { description, amount } = action.payload;
             return {
                 description: '',
-                action: '',
+                amount: '',
                 lineItems: [
                     ...state.lineItems,
                     { description, amount }

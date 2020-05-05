@@ -18,7 +18,7 @@ export default function IncomeReducer (state = defaultState, action) {
         case 'UPDATE_INCOME_AMOUNT': {
             return {
                 ...state,
-                description: payload.amount
+                amount: payload.amount
             };
         }
 
@@ -39,3 +39,4 @@ export default function IncomeReducer (state = defaultState, action) {
         }
     }
 }
+
